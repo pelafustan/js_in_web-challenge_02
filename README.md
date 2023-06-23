@@ -2,11 +2,14 @@
 
 ## Context
 
-We need to build a little price calculator using `js` and some basic queries.
+There are three requirements:
+
+1. When clicking on image, toggle border.
+1. Simulate a cart for portraits. If you select too much, that's a paddlin'.
 
 ## View
 
-Let's check this wonderful piece of software [here.](https://pelafustan.github.io/js_in_web-challenge_01/)
+Let's check this wonderful piece of software [here.](https://pelafustan.github.io/js_in_web-challenge_02/)
 
 ## Author
 
