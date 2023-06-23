@@ -26,21 +26,24 @@ function checkOrder() {
 }
 
 function passwordChecker() {
-    let first = document.getElementById("first-number");
-    let second = document.getElementById("second-number");
-    let third = document.getElementById("third-number");
+    let first = document.getElementById("first-number").value;
+    let second = document.getElementById("second-number").value;
+    let third = document.getElementById("third-number").value;
     let pass = first + second + third;
     let message_container = document.getElementById("password-message");
     let message = "";
 
+    message_container.classList.remove("too-much");
+
     if (pass == "911") {
-        message = "Password 1 correcto.";
+        message = "Valid Password 1.";
     } else if (pass == "714") {
-        message = "Password 2 correcto.";
+        message = "Valid Password 2.";
     } else {
         message = "Incorrect password.";
         message_container.classList.add("too-much");
     }
 
     message_container.innerText = message;
+
 }
