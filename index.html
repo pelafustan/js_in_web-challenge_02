@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Second Challenge</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Border Changer</h2>
+        <img src="http://placekitten.com/g/400/400" alt="kitten" class="clickable" onclick="changeBorder()">
+      </section>
+      <section>
+        <h2>Kitten Portraits</h2>
+        <div class="gallery">
+          <div class="portrait">
+            <img src="http://placekitten.com/600/800" alt="kitten01">
+            <label for="kitten1">How many portraits? </label>
+            <input type="number" name="kitten1" id="kitten1" value="0" min="0" max="10">
+          </div>
+          <div class="portrait">
+            <img src="http://placekitten.com/620/820" alt="kitten02">
+            <label for="kitten2">How many portraits? </label>
+            <input type="number" name="kitten2" id="kitten2" value="0" min="0" max="10">
+          </div>
+          <div class="portrait">
+            <img src="http://placekitten.com/640/840" alt="kitten03">
+            <label for="kitten3">How many portraits? </label>
+            <input type="number" name="kitten3" id="kitten3" value="0" min="0" max="10">
+          </div>
+        </div>
+        <button type="button" onclick="checkOrder()">Place Order</button>
+        <p id="portrait-message"></p>
+      </section>
+      <section>
+        <h2>Give me the password</h2>
+        <div class="pass-selection">
+          <select name="first-number" id="first-number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <select name="second-number" id="second-number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <select name="third-number" id="third-number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+        <button type="button" onclick="passwordChecker()">Check</button>
+        <p id="password-message"></p>
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
